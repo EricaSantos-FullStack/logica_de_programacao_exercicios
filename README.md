@@ -9,4 +9,4 @@ Lógica de programação é a técnica utilizada para desenvolver instruções e
 ----
 📍 Foi muito interessando refazer passos da minha caminhada como programadora. Retornar ao inicio das minhas aulas de lógica no SENAI. <br>
 📍 Além de fazer os exercícios propostos, fui incluindo funcionalidades extras. <br>
-📍 Pude escrever um codigo puro tirado da cabeça e me surpreendi que cheguei a um ponto que consigo escrever sem pesquisar. 
+📍 Pude escrever um codigo puro sem precisar pesquisar. 
