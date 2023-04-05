@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Segredo</title>
+</head>
+
+<body>
+    <h1>Advinhe o segredo</h1>
+    <input type="text" id="txtNumber" name="seuNumero">
+    <button>Compare com o meu segredo</button>
+
+    <p id="resultado"></p>
+    <p id="resultadoReal"></p>
+
+    <button type="button" onClick="recarregarAPagina()">Tente de novo!</button>
+
+    <script>
+        var segredo = Math.round(Math.random() * 10);
+
+        var teste = document.querySelector("input");
+        teste.focus();
+
+
+        function verifica() {
+            if (teste.value == segredo) {
+                alert("Você acertou! 😝")
+            } else {
+                alert("Você errou 😓")
+            }
+
+            document.getElementById("resultado").innerHTML = "Você chutou o número: " + teste.value
+            document.getElementById("resultadoReal").innerHTML = "O segredo é: " + segredo
+
+            teste.value = "";
+
+        }
+
+        function recarregarAPagina() {
+            window.location.reload();
+        }
+
+        var button = document.querySelector("button");
+        button.onclick = verifica;
+
+    </script>
+</body>
+
+</html>
