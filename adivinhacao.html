@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo - adivinha o numero</title>
+</head>
+
+<body>
+    <h1>Jogo da adivinhação Infinita</h1>
+    <script>
+
+        var numeroMagico = Math.round(Math.random() * 10);
+
+        var numero = parseInt(prompt("Digite o seu chute! De 1 a 10"));
+
+        var mensagem;
+
+        if (numero == numeroMagico) {
+            mensagem = "Você acertou! 😉"
+        } else {
+            mensagem = "Você errou, o número certo era " + numeroMagico
+        }
+
+        document.write(mensagem);
+
+    </script>
+</body>
+
+</html>
